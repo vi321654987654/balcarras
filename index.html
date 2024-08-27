@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal academic website for David Balcarras, Lecturer in Philosophy and Digital Learning Lab Fellow at MIT, works on philosophy of language and mind, metaphysics, and philosophy of science.">
+    <title>David Balcarras, MIT</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6J2XKMZPK1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6J2XKMZPK1');
+</script>
+
+<body>
+<div id="page-wrap">
+<img src="images/cthulu.png" alt="The Self" id="pic" />
+<div id="contact-info" class="vcard">
+<h1 class="fn">David Balcarras</h1>
+</div>
+	<div id="objective">
+		<p>I&rsquo;m an Assistant Professor in the Department of Philosophy at the University of Lethbridge in Alberta, Canada. Previously, I was an Instructor and Digital Learning Fellow in the Department of Linguistics and Philosophy at MIT, where I got my PhD in 2020.</p>
+		<p>I work on philosophy of language and mind, philosophy of linguistics and cognitive science, and metaphysics.</p>
+		<p>Follow me on <a href="http://philpapers.org/profile/26567">philpeople</a> or email me at <a class="email" href="mailto:david.balcarras@uleth.ca">david.balcarras@uleth.ca</a>.</p>
+	</div>
+
+<div class="clear"></div>
+
+<dl>
+
+<dd class="clear"></dd>
+
+<dt>Education</dt>
+<dd>
+		<p class="list">PhD in Philosophy, MIT (2020)<br />
+		MA in Philosophy, University of Toronto (2014)<br />
+		BA (Hons) in Philosophy, University of Toronto Scarborough (2013)</p>
+</dd>
+
+<dd class="clear"></dd>
+
+<dt>Work</dt>
+	<dd class="papers">
+			<div class="pubs">
+			<p>"Is meaning cognized?" <i>Mind &amp; Language</i> [<a href="#" onclick="toggleAbstract('abstract1')"; return false;>abstract</a>] [<a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/mila.12452?download=true">.pdf</a>]</p>
+				<div class="abstract" id="abstract1"> In this article, I defend an account of linguistic comprehension on which meaning is not cognized, or on which we do not tacitly know our language's semantics. On this view, sentence comprehension is explained instead by our capacity to translate sentences into the language of thought. I explain how this view can explain our capacity to correctly interpret novel utterances, and then I defend it against several standing objections.</div>
+			<p>"What is it to have a language?" <i>Pacific Phil. Quarterly</i> [<a href="#" onclick="toggleAbstract('abstract2')"; return false;>abstract</a>] [<a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/papq.12446?download=true">.pdf</a>]</p>
+				<div class="abstract" id="abstract2"> This article defends the view that having a language just is knowing how to engage in communication with it. It also argues that, despite claims to the contrary, this view is compatible and complementary with the Chomskyan conception of language on which humans have languages in virtue of being in brain states realizing tacit knowledge of grammars for those languages.</div>
+			<p>"Functionalism and tacit knowledge of grammar" <i>Phil. Perspectives</i> [<a href="#" onclick="toggleAbstract('abstract3')"; return false;>abstract</a>] [<a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/phpe.12179?download=true">.pdf</a>]</p>
+				<div class="abstract" id="abstract3"> In this article, I argue that if tacit knowledge of grammar is analyzable in functional-computational terms, then it cannot ground linguistic meaning, structure, or sound. If to know or cognize a grammar is to be in a certain computational state playing a certain functional role, there can be no <i>unique</i> grammar cognized. Satisfying the functional conditions for cognizing a grammar <i>G</i> entails satisfying those for cognizing many grammars disagreeing with <i>G</i> about expressions' semantic, phonetic, and syntactic values. This threatens the Chomskyan view that expressions have such values for speakers because they cognize grammars assigning them those values. For if this is true, semantics, syntax, and phonology must be indeterminate, thanks to the indeterminacy of grammar-cognizing (qua functional-computational state). So, the fact that a speaker cognizes a grammar cannot explain the determinate character of their language.</div>
+			</div>
+	</dd>
+
+<dd class="clear"></dd>
+
+<dt>Other</dt>
+	<dd class="papers">
+		<p class="list"><a href="http://www.mit.edu/~balc/foster.pdf">Foster on sustainment</a><br />     
+		<a href="http://individual.utoronto.ca/benj/dkl-ac-fd.html">David Lewis autocitation network</a> (with <a href="http://individual.utoronto.ca/benj/">Benj Hellie</a>)<br />
+		<a href="https://www.youtube.com/channel/UC4Ub4r8h7auWF7Hud4z_C0w/videos">Assorted philosophy audiovisuals</a></p>
+	</dd>
+</dl>
+<div class="clear"></div>
+</div>
+<script>
+  function toggleAbstract(abstractId) {
+    var abstract = document.getElementById(abstractId);
+    if (abstract.style.maxHeight === "0px" || abstract.style.maxHeight === "") {
+        abstract.style.display = "block";
+        setTimeout(function() { 
+            abstract.style.maxHeight = "600px";
+            abstract.style.opacity = "1";
+        }, 10);
+    } else {
+        abstract.style.maxHeight = "0px";
+        abstract.style.opacity = "0";
+        setTimeout(function() {
+            abstract.style.display = "none";
+        }, 1000); 
+    }
+    event.preventDefault();
+  }
+</script>
+</body>
+</html>
+	  
