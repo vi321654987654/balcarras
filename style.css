@@ -1,0 +1,190 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+body {
+    font-family: 'Open Sans', serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f5f5f5;
+	padding: 0 15%;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:visited {
+    color: #0056b3;
+}
+
+/* Logo Styles */
+#logo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#logo a {
+    color: inherit;
+}
+
+#author {
+  font-size: smaller;
+  font-style: italic;
+}
+
+/* Footer Styles */
+#footer {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* Indent Styles */
+div.indent, p.indent {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* List Styles */
+ul.comment, ul.note, ul.question {
+    list-style-type: none;
+    padding-left: 1em;
+    margin: 20px;
+    position: relative;
+}
+
+ul.comment li::before, ul.note li::before, ul.question li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ul.comment li::before {
+    background-image: url(/images/balloon.gif);
+}
+
+ul.note li::before {
+    background-image: url(/images/note.gif);
+}
+
+ul.question li::before {
+    background-image: url(/images/question.gif);
+}
+
+/* Quotation and Definition Styles */
+blockquote {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 20px;
+    border-left: 4px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+dfn {
+    border-bottom: 1px dotted #888;
+    cursor: help;
+    font-style: normal;
+    font-weight: normal;
+}
+
+q {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Additional Classes */
+.red { color: #e44d26; }
+.gray { color: #888; }
+.boldgray { color: #666; font-weight: bold; }
+.pps { font-style: italic; }
+
+/* Image Styles */
+a.picture, a.leftpicture {
+    display: inline-block;
+    margin: 10px;
+}
+
+a.picture {
+    float: right;
+}
+
+a.leftpicture {
+    float: left;
+}
+
+a.picture cite, a.leftpicture cite {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        font-size: 1.5rem;
+    }
+    ul.comment, ul.note, ul.question {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+/* Navigation Menu */
+#navMenu {
+  text-align: center;
+}
+#navMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: inline-block;
+}
+
+#navMenu li {
+  float: left;
+}
+
+#navMenu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navMenu li a.active {
+  background-color: #555;
+  border: 1px solid white;
+}
+
+#navMenu li a:hover {
+  background-color: #111;
+}
+/* Hide all sections */
+#content > section {
+  display: none;
+}
+
+/* Style the active section */
+#content > section.active {
+  display: block;
+}
+
