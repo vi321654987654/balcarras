@@ -1,0 +1,11 @@
+Hi,
+
+I am the owner of the domain name and website "balcarras.ca".
+I would like to have all archives of this site removed from the Wayback Machine.
+
+URL/URL Path to exclude: balcarras.ca (and all subdomains)
+Time period of domain ownership: 26/08/2024 to Present
+Time period to exclude: 26/08/2024 to Present
+
+Best,
+David Balcarras
